@@ -131,7 +131,7 @@ func main(){
 
 	a := Account{}
 
-	a.newAccount("João", 123, 1000)
+	a.newAccount("João", 123, 5000)
 	println("before deposit")
 	println(a.getName())
 	println(a.getNumber())
@@ -143,7 +143,6 @@ func main(){
 	println(" ")
 	println("after withdraw")
 	a.withdraw(1000)
-
 	println(a.getBalance())
 
 
