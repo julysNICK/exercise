@@ -90,9 +90,9 @@ func main() {
 
 	// wg.Add(2)
 
-	// go sendNumberOdd(ch, &wg)
-	// go sendNumberEven(ch, &wg)
-	// go printNumber(ch, &wg)
+	go sendNumberOdd(ch, &wg)
+	go sendNumberEven(ch, &wg)
+	go printNumber(ch, &wg)
 
 	// wg.Wait() // aguarda a conclusão de todas as goroutines antes de encerrar o programa
 	ch := make(chan int) // cria um canal de inteiros
