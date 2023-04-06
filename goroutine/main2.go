@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 func func1() {
@@ -41,8 +42,8 @@ func func5(ch <-chan int, wg *sync.WaitGroup) {
 
 func main() {
 
-	// go func1()
-	// time.Sleep(1 * time.Second)
+	go func1()
+	time.Sleep(1 * time.Second)
 
 	// go func2([]string{"hello", "world", "!"})
 
