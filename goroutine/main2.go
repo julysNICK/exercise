@@ -45,7 +45,7 @@ func main() {
 	go func1()
 	time.Sleep(1 * time.Second)
 
-	// go func2([]string{"hello", "world", "!"})
+	go func2([]string{"hello", "world", "!"})
 
 	// fmt.Scanln()
 
